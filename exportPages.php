@@ -47,7 +47,7 @@ class SemanticMeetingMinutesGetExtensionPagesText extends Maintenance {
 		global $egFODStandardPagesFile, $egFODStandardPagesFileRoot, $egFODStandardPagesFileEditSummary;
 
 		$pageImporter = new PageImporter( $egFODStandardPagesFile, $egFODStandardPagesFileRoot );
-		$pageImporter->exportPagesToFiles();
+		$this->output( $pageImporter->exportPagesToFiles() );
 
 		$this->output( "\n## Finished retrieving Semantic Meeting Minutes pages.\n" );
 	}

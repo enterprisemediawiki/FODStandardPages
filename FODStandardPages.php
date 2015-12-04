@@ -36,4 +36,4 @@ $GLOBALS['wgMessagesDirs']['FODStandardPages'] = __DIR__ . '/i18n';
 
 $GLOBALS['egFODStandardPagesFile'] = __DIR__ . "/pages.json";
 $GLOBALS['egFODStandardPagesFileRoot'] = __DIR__ . "/pages";
-$GLOBALS['egFODStandardPagesFileEditSummary'] = "Updated with content from Extension:FODStandardPages version " . FOD_STANDARD_SETTINGS_VERSION
+$GLOBALS['egFODStandardPagesFileEditSummary'] = "Updated with content from Extension:FODStandardPages version " . FOD_STANDARD_SETTINGS_VERSION;

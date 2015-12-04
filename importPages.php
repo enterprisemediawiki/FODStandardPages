@@ -46,7 +46,7 @@ class FODStandardPagesImport extends Maintenance {
 		global $egFODStandardPagesFile, $egFODStandardPagesFileRoot, $egFODStandardPagesFileEditSummary;
 
 		$pageImporter = new PageImporter( $egFODStandardPagesFile, $egFODStandardPagesFileRoot );
-		$pageImporter->import( $egFODStandardPagesFileEditSummary );
+		$this->output( $pageImporter->import( $egFODStandardPagesFileEditSummary ) );
 
 		$this->output( "\n## Finished importing FOD Standard Pages.\n" );
 	}
