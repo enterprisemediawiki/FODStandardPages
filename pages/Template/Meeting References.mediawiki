@@ -1,0 +1,10 @@
+<noinclude>THIS TEMPLATE SHOULD BE REMOVED. It is now contained within the Extension:Header Footer page [[MediaWiki:Hf-nsfooter-]].</noinclude><includeonly><!--{{#ask: [[Topic from meeting::+]][[Related article::{{PAGENAME}}]]
+|mainlabel=-
+|? From page = Meeting
+|? Has topic title = Topic
+|? Synopsis
+|? Related article = Related Articles
+| intro = <h2>Meeting References</h2>
+|sort = Has date
+|order = DESC
+}}--></includeonly>

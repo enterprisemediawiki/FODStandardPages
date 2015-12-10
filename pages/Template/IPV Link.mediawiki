@@ -1,0 +1,21 @@
+<noinclude>This template is to simplify linking to an [[IPV]] procedure. Use the template in the following manner:
+
+<pre>{{IPV Link | 12345 }}</pre>
+
+The "12345" should be replaced by the unique ID of the IPV procedure. This can be found using one of two options depending on the procedure format. Open the procedure in IPV and then perform the option relevant to the procedure format:
+* '''IPV:''' Right-click on the procedure and open its properties
+** The format is M_12345. Just include the numbers, not the "M_".
+* '''PDF:''' Locate the number in the lower-right corner of each page
+** The format is 12345.doc (or 12345.xls). Just include the numbers, not the ".doc".
+
+The output will be:
+
+<pre>https://ops.jsc.nasa.gov/ipv/ipv.jsp?uniqueId=M_12345&libraryId=1</pre>
+
+If you are using a basic wiki link, the format would then be:
+
+<pre>[{{IPV Link | 12345}} EVA Task 1.7.101 EVA Tool Serial Number Reference]</pre>
+
+Replace "EVA Task 1.7.101 EVA Tool Serial Number Reference" with whatever you want to show up as the text for your link.
+
+</noinclude><includeonly>https://ops.jsc.nasa.gov/ipv/ipv.jsp?uniqueId=M_{{Trim| {{{1|}}} }}&libraryId=1</includeonly>

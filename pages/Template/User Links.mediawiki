@@ -1,0 +1,8 @@
+<noinclude>
+<pre>
+{{User Links | Ejmontal}}
+</pre>
+Results in: {{User Links|Ejmontal}}
+
+ 
+</noinclude><includeonly>{{#if: {{{1|}}} | {{#!: [[User:{{{1|}}}|User]] &nbsp;| [[Special:Contributions/{{{1|}}}|Contribs]] }} |  }}</includeonly>

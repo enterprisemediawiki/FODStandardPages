@@ -1,0 +1,118 @@
+<noinclude>
+'''Note: currently this template can only handle six videos.''' If you need more, use the template multiple times.
+
+<pre>
+{{Video list
+| Video1   =
+| Thumb1   =
+| Caption1 =
+
+| Video2   =
+| Thumb2   =
+| Caption2 =
+
+| Video3   =
+| Thumb3   =
+| Caption3 =
+
+| Video4   =
+| Thumb4   =
+| Caption4 =
+
+| Video5   = 
+| Thumb5   =
+| Caption5 =
+
+| Video6   = 
+| Thumb6   =
+| Caption6 =
+}}
+</pre>
+
+== Example ==
+=== Code ===
+<pre>
+{{Video list
+|Thumb1 = File:TM install thumb.png
+|Video1 = https://mod2.jsc.nasa.gov/da7/docs/Station/JSC/CBTs/Small_Tools/Small_Tools/content/videos/TM Installation on microconical fixture1.wmv
+|Caption1 = Video on old EVA AsCan website, thumbnail on wiki.
+
+| Thumb2   =
+| Video2   = http://io.jsc.nasa.gov/photos/11000/video/iss033m013061229.mp4
+| Caption2 = Imagery online video, no thumbnail specified.
+
+|Thumb3   = File:EMUFPSRnROV_thumb.jpg
+|Video3   = https://modspops.jsc.nasa.gov/MOD/DX/DX32%20DX35%20SharePoint/IncrementOps/FPS/Working%20Documents/3011%20FPS%20RR%20As%20Executed%20Products/Videos/EMU%20FPS%20RnR%20OV.wmv
+|Caption3 = Video on Sharepoint (though this is discouraged), thumbnail image on wiki
+
+|Thumb4   = http://io.jsc.nasa.gov/photos/vrps/11157/thum/iss037m012971351.jpg
+|Video4   = http://io.jsc.nasa.gov/photos/vrps/11157/video/iss037m012971351.mp4#t=1280
+|Caption4 = Imagery Online video, Imagery Online thumbnail image
+}}
+</pre>
+
+=== Output ===
+{{Video list
+|Thumb1 = File:TM install thumb.png
+|Video1 = https://mod2.jsc.nasa.gov/da7/docs/Station/JSC/CBTs/Small_Tools/Small_Tools/content/videos/TM Installation on microconical fixture1.wmv
+|Caption1 = Video on old EVA AsCan website, thumbnail on wiki.
+
+| Thumb2   =
+| Video2   = http://io.jsc.nasa.gov/photos/11000/video/iss033m013061229.mp4
+| Caption2 = Imagery online video, no thumbnail specified.
+
+|Thumb3   = File:EMUFPSRnROV_thumb.jpg
+|Video3   = https://modspops.jsc.nasa.gov/MOD/DX/DX32%20DX35%20SharePoint/IncrementOps/FPS/Working%20Documents/3011%20FPS%20RR%20As%20Executed%20Products/Videos/EMU%20FPS%20RnR%20OV.wmv
+|Caption3 = Video on Sharepoint (though this is discouraged), thumbnail image on wiki
+
+|Thumb4   = http://io.jsc.nasa.gov/photos/vrps/11157/thum/iss037m012971351.jpg
+|Video4   = http://io.jsc.nasa.gov/photos/vrps/11157/video/iss037m012971351.mp4#t=1280
+|Caption4 = Imagery Online video, Imagery Online thumbnail image
+}}
+
+== Notes ==
+For the general user: don't worry about this. This is just for understanding how the template works.
+<pre>
+EXTERNAL VIDEO, EXTERNAL THUMB
+<span class="plainlinks">[VIDEOLINK <img src="IMAGELINK" class="thumbimage" />]</span>
+
+
+EXTERNAL VIDEO, INTERNAL THUMB or NO THUMB
+[[IMAGELINK|
+<span class="plainlinks">[[IMAGELINK|link=VIDEOLINK|160x100]]</span>
+
+
+INTERNAL VIDEO, INTERNAL THUMB
+<span class="plainlinks">[[IMAGELINK|link=VIDEOLINK|160x100]]</span>
+
+
+INTERNAL VIDEO, EXTERNAL THUMB
+This is dumb. Don't support this.
+</pre></noinclude><includeonly><ul class="gallery"><!--
+
+    #
+    #  Perform array map on list of newline-separated images
+    #
+-->{{#arraymap:1,2,3,4,5,6|,|VAR|{{#if: {{{VideoVAR|}}} | <li class="gallerybox" style="background-color:transparent;border-color:transparent;"><div class="io-thumb io-thumb-left"><!--
+
+    #
+    #  Each image is inside a table for formatting reasons
+    #
+--><table style="background-color:#f9f9f9;"><tr><td style="text-align:center;"><!--
+
+    #
+    #
+    #
+-->{{#ifeq: 0 
+    | {{#if: {{{ThumbVAR|}}} | {{#pos:{{{ThumbVAR}}}|File:}} |0}}
+    | <span class="plainlinks">[[{{#if:{{{ThumbVAR|}}}|{{{ThumbVAR}}}|File:Video_icon.png}}|link={{{VideoVAR}}}|frameless|160x160px]]</span>
+    | <span class="plainlinks">[{{{VideoVAR}}} <img src="{{{ThumbVAR}}}" class="thumbimage" width="320px" />]</span>
+   }}<!--
+
+
+
+
+    #
+    #  Insert caption below image, close out table, close out arraymap (will repeat the above code for all images)
+    #
+--></td></tr><tr><td style="text-align:left">{{{CaptionVAR|}}}</td></tr></table></div></li> | }}|<nowiki> </nowiki>}}</ul></includeonly>

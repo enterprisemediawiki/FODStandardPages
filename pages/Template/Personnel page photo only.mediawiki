@@ -1,0 +1,24 @@
+<noinclude>
+{{Template description
+|Synopsis = Template used to format each person's block in the DX3 Personnel page.
+|Category = Helper Template
+|Has good documentation = False
+}}
+
+Inputs:
+<pre>
+    page name = {{{1}}}
+ |? Has photo
+</pre>
+</noinclude><includeonly><!-- 
+
+<div class="listing">
+<div style="float:left; width:250px; height:425px; border:solid black 1px; margin:5px; padding:10px"> 
+
+--><li class="gallerybox" style="background-color:transparent;border-color:transparent;width:225px;height: 350px;border:solid black 1px; margin:5px; padding:5px;">
+<h3 style="text-align:center;">[[{{{1|}}}]]</h3>
+{{#if:{{{2|}}}|<div style="text-align:center; margin:0px 0px 10px 0px;">{{Infobox image | Image = {{{2|}}} | Width = 200px }}</div>|No image}}
+</li><!--
+</div>
+</div>-->
+</includeonly>

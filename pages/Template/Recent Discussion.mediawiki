@@ -1,0 +1,12 @@
+{{#masonry-block: title = Recent Discussion
+ | width = 1
+ | color = purple
+ | body  = 
+{{#ask: [[Talk:+]]
+ | format = ul
+ | sort   = Modification date
+ | order  = desc
+ | limit  = 5
+ | searchlabel = <strong>See all recent discussion</strong>
+}}
+}}

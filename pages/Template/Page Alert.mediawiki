@@ -1,0 +1,19 @@
+<noinclude>{{Template description
+|Synopsis = Indicates that a page has some significant issue requiring attention
+|Category = Banner Templates
+|Has good documentation = False
+}}
+
+<pre>
+{{Page Alert | This is some important statement about the page. }}
+</pre>
+
+
+== Output ==
+</noinclude><includeonly>{{Banner
+|Content={{{1|}}}
+|Categories=Pages marked with an alert
+|icon= [[File:Warning-Triangle.png|100x100px]]
+|border-color=#85120C
+|border-width=3px
+}}</includeonly>

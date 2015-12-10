@@ -1,0 +1,26 @@
+<noinclude>
+This displays meeting topic headlines. it is intended for the [[EVA Group Meeting]] page.
+</noinclude><includeonly><!--
+
+#
+#   Define a variable called Variable-for-<meeting name>
+#   The contents of this variable will be the name of the most recent
+#   meeting of this type.
+#
+-->{{#vardefine: Variable-for-{{{1|}}} |{{#ask:[[Meeting type::{{{1|}}}]]|sort=Meeting date|order=desc|limit=1|format=list|searchlabel=|link=none}}}}<!--
+
+
+#
+#   Display topics from the meeting, along with a heading.
+#   Topics found based on being from the name of the meeting found above.
+#
+-->
+<h3>[[{{#var:Variable-for-{{{1|}}} }}]]</h3>
+Notes taken by {{#show: {{#var:Variable-for-{{{1|}}} }} | ?Notes taken by }}
+{{#ask:[[From page::{{#var:Variable-for-{{{1|}}} }}]]
+|?Has topic title=
+|mainlabel=-
+|format=ul
+|sort=Index
+|order=asc
+}}</includeonly>

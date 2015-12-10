@@ -1,0 +1,26 @@
+<noinclude>{{Template description
+|Synopsis = Indicates that a page should be deleted
+|Category = Banner Templates
+|Has good documentation = False
+}}
+
+<pre>
+{{Mark for deletion 
+| Deletion date = 2014-05-01
+| Details = This page is unused and has no data on it.
+}}
+</pre>
+
+
+== Output ==
+</noinclude><includeonly>{{Banner
+|Content=This page has been marked for deletion. If you believe it should not be deleted '''please comment on the [[{{TALKPAGENAME}}|discussion page]]'''.
+
+'''Deletion date:''' {{#if: {{{Deletion date|}}} | [[Deletion date::{{{Deletion date}}}]] | No deletion date }}
+
+'''Additional details:''' {{#if: {{{Details|}}} | {{{Details|}}} | No details given }}
+|Categories=Pages marked for deletion
+|icon= [[File:Warning-Triangle.png|100x100px]]
+|border-color=#85120C
+|border-width=3px
+}}</includeonly>

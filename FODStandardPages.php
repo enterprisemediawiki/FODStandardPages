@@ -31,9 +31,9 @@ $GLOBALS['wgExtensionCredits']['other'][] = array(
 
 $GLOBALS['wgMessagesDirs']['FODStandardPages'] = __DIR__ . '/i18n';
 
-// Autoload setup class (location of parser function definitions)
-// $GLOBALS['wgAutoloadClasses']['FODStandardPages'] = __DIR__ . '/FODStandardPages.class.php';
-
-$GLOBALS['egFODStandardPagesFile'] = __DIR__ . "/pages.json";
-$GLOBALS['egFODStandardPagesFileRoot'] = __DIR__ . "/pages";
-$GLOBALS['egFODStandardPagesFileEditSummary'] = "Updated with content from Extension:FODStandardPages version " . FOD_STANDARD_SETTINGS_VERSION;
+PageImporter::registerPageList(
+	"FODStandardPages",
+	__DIR__ . "/pages.json",
+	__DIR__ . "/pages",
+	"Updated with content from Extension:FODStandardPages version " . FOD_STANDARD_SETTINGS_VERSION
+);

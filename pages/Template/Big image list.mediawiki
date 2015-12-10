@@ -1,0 +1,67 @@
+<!--
+image link: {{#explode:VAR|##|0}}
+caption: {{#explode:VAR|##|1}}
+
+
+
+
+--><includeonly><ul class="gallery"><!-- start the unordered list
+
+
+-->{{#arraymap:{{{1|}}}|\n|VAR|<li class="gallerybox" style="background-color:transparent;border-color:transparent;"><div class="io-thumb" style="margin: .5em 1.4em 1.3em 1.4em; background-color: transparent;"><!--
+
+--><table class="big-image-list" style="background-color:#f9f9f9;"><tr>
+<td style="text-align:center;"><!--
+
+
+-->{{#ifeq: 0
+    | {{#pos:VAR|File:}}
+    | [[{{#explode:VAR|##|0}}|frameless|border|{{#if:{{{Max height|}}}
+|x{{{Max height|}}}px|x300px}}]]<br />[[:{{#explode:VAR|##|0}}|Info Page]]
+    | <span class="plainlinks">[{{IO Link | hires | {{#explode:VAR|##|0}} }} <img src="{{IO Link | lores | {{#explode:VAR|##|0}} }}" class="thumbimage io-big-image-list-image" {{#if: {{{Max height|}}} 
+    | style="height:{{{Max height|}}}px;" | style="height:300px;" }} />]</span><br />
+[{{IO Link | hires | {{#explode:VAR|##|0}} }} {{#explode:VAR|##|0}}] }}</td></tr><tr><td style="text-align:center">{{#explode:VAR|##|1}}&nbsp;</td></tr>
+</table></div></li>| }}</ul>
+{{#ifeq: {{{ViewInIO|}}} | true |[http://io.jsc.nasa.gov/app/search/results.cfm?adv=1&check=0&sr=1&as=0&ids={{#arraymap:{{{1|}}}|\n|VAR|{{#ifeq: 0 | {{#pos:VAR|File:}} ||{{#explode:VAR|##|0}}}}|+}}&go=0&ie=0&so=1&rf=1&rpp1=21 View IO images in Imagery Online]<br /> | }}
+</includeonly><noinclude>
+{{Template description
+|Synopsis = Allows local and Imagery Online images to be included in the same image gallery with large images.
+|Category = Media management
+|Has good documentation = True
+}}
+
+== Example: Standard Usage ==
+=== Source ===
+<pre>
+{{Big image list |
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+}}
+</pre>
+
+=== Output ===
+{{Big image list |
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+}}
+
+== Example: Limit Image Height ==
+=== Source ===
+<pre>
+{{Big image list | 
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+| Max height = 200
+}}
+</pre>
+
+=== Output ===
+{{Big image list | 
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+| Max height = 200
+}}
+
+== See Also ==
+* [[Template:Image list]]
+</noinclude>

@@ -1,0 +1,7 @@
+<includeonly><tr><td>[[{{{1|}}}]]</td>
+<td>{{#ask: [[Category:Meeting Minutes]] [[Meeting date::> {{#time: d F Y | -30 days}} ]] [[Notes taken by::{{{1|}}}]]
+|format=count
+|order=desc
+|limit=50
+}}</td>
+</tr></includeonly>

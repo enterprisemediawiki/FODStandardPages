@@ -1,0 +1,13 @@
+<noinclude>{{Template description
+|Synopsis = Creates a banner marking a page as being incomplete
+|Category = Banner Templates, Editorial Templates
+|Has good documentation = False
+}}</noinclude><includeonly>{{Banner
+|Content=''This article [[stub|requires more info]] to be complete. You can help the {{SITENAME}} by [{{fullurl:{{FULLPAGENAME}}|action=edit}} expanding it]''{{#if:{{{1|}}}|
+<br /><br />
+'''Required info:''' {{{1|}}}|}}
+|Categories=Articles to be expanded
+|icon= [[File:Quill and ink.png|40x40px]]
+|border-color=#FFB50D
+|background-color=#FDFFCB
+}}</includeonly>

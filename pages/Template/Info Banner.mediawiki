@@ -1,0 +1,14 @@
+<noinclude>{{Template description
+|Synopsis = Puts a banner on a page indicating some minorly important information
+|Category = Banner Templates
+|Has good documentation = False
+}}
+
+
+
+</noinclude><includeonly>{{Banner
+|Content={{{1}}}
+|Categories=Articles with an info banner
+|icon=[[File:Icon-Information-Blue.png|40x40px]]
+|border-color=blue
+}}</includeonly>

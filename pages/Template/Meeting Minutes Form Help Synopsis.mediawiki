@@ -1,0 +1,23 @@
+{{Collapsible
+  | Content = 
+* '''Examples'''
+** Update SAFER FR (B15-53) wording to include "to perform SAFER C/O within 60 days of EVA and GN2 check within 14 of EVA."
+** On 2 Nov 2012, the pull tab/strap broke free from the power switch on REBA battery 1008. Battery is NO GO until testing determines if possible to actuate switch EVA without pull tab
+** Waiver for CCT Kit s/n 1010 to be out of configuration control. During EVA 18 two N2 cartridges were used and trashed without removing tether rings. Kit is out of configuration without the tether rings.
+* '''A short description of topic, 255 characters or less'''
+** These examples give a future viewer a quick understanding of what was discussed and what the outcome was.
+** Sorry, at the moment this does not count your characters. Just try to keep it short.
+* '''Do not use links in this field'''
+** This field cannot accept square braces, e.g. [ and ]
+** Anything you would like to link to here should instead be put in the "related articles" field below
+* '''This field is required'''
+** If you don't include this field the meeting minutes will display poorly on related pages
+** Sometimes for very small meeting topics it may seem redundant to fill in both this field and the "Full Text" field below. '''This field is more important'''.
+* '''Keep everything in one "paragraph".'''
+** Hitting "enter" to create a new line will cause the synopsis to look funny on the main page.
+  | Collapse text = hide help
+  | Expand text = help
+  | Start hidden = true
+  | Before trigger = '''Synopsis:''' (
+  | After trigger = )
+}}

@@ -1,0 +1,16 @@
+<noinclude>
+
+<pre>{{Person links | James Montalvo | ejmontal }}</pre>
+Results in: {{Person links | James Montalvo | ejmontal }}
+
+
+<pre>{{Person links | James Montalvo }}</pre>
+Also results in: {{Person links | James Montalvo }}
+
+== Inputs ==
+<pre>
+{{{1}}} = Person's name, as used on their "Person" page (and should be their "Real Name" and signature)
+{{{2}}} = (optional) NDC username, i.e. "ejmontal". If not supplied, the template will query for it from the Person page.
+</pre>
+
+</noinclude><includeonly>[[{{{1|}}}]]<sup>{{User Links | {{#if: {{{2|}}} | {{{2}}} | {{#show: {{{1}}} | ?Username | link=none }} }} }}</sup></includeonly>

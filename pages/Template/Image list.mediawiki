@@ -1,0 +1,65 @@
+<includeonly><ul class="gallery"><!--
+
+    #
+    #  Perform array map on list of newline-separated images
+    #
+-->{{#arraymap:{{{1|}}}|\n|VAR|<li class="gallerybox" style="background-color:transparent;border-color:transparent;"><div class="io-thumb io-thumb-left"><!--
+
+    #
+    #  Each image is inside a table for formatting reasons
+    #
+--><table style="background-color:#f9f9f9;"><tr><td style="text-align:center;"><!--
+
+    #
+    #  DETERMINES if the current filename in the arraymap is a local file or Imagery Online file
+    #    #pos returns 0 if "File:" is found at the beginning of the string
+    #    returns nothing if "File:" is not found in the string, or a number other than zero if found later in the string
+    #
+    #  Explode function used to split the image information into filename and caption when it sees double hash (##)
+    #    explode:VAR|##|0 = Image filename (either local or IO)
+    #    explode:VAR|##|1 = Image caption
+    #
+    #
+-->{{#ifeq: 0 
+    | {{#pos:VAR|File:}} 
+    | [[{{#explode:VAR|##|0}}|frameless|border|150x150px|link={{filepath: {{#replace:{{#explode:VAR|##|0}}|File:|}} }}]]<br />[[:{{#explode:VAR|##|0}}|Info Page]]
+    | <span class="plainlinks">[{{IO Link | hires | {{#explode:VAR|##|0}} }} <img src="{{IO Link | thum | {{#explode:VAR|##|0}} }}" class="thumbimage" />]</span><br />[{{IO Link | hires | {{#explode:VAR|##|0}} }} {{#explode:VAR|##|0}}] 
+}}<!--
+
+
+    #
+    #  Insert caption below image, close out image table, close out arraymap (will repeat the above code for all images)
+    #
+--></td></tr><tr><td style="text-align:center">{{#explode:VAR|##|1}}</td></tr></table></div></li>| }}</ul>
+<!--
+
+    #
+    #  Clear after images to insert a link to IO (unless ViewInIO explicitly set to false)
+    #
+-->{{#ifeq: {{{ViewInIO|}}} 
+    | true 
+    | [http://io.jsc.nasa.gov/app/search/results.cfm?adv=1&check=0&sr=1&as=0&ids={{#arraymap:{{{1|}}}|\n|VAR|{{#ifeq: 0 | {{#pos:VAR|File:}} ||{{#explode:VAR|##|0}}}}|+}}&go=0&ie=0&so=1&rf=1&rpp1=21 View IO images in Imagery Online]<br /> | }}</includeonly><noinclude>
+{{Template description
+|Synopsis = Allows local and Imagery Online images to be included in the same image gallery.
+|Category = Media management
+|Has good documentation = True
+}}
+
+== Example ==
+=== Source ===
+<pre>
+{{Image list |
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+}}
+</pre>
+
+=== Output ===
+{{Image list |
+File:6B_cover_BSP_Transponder.JPG## This is a local image
+jsc2013e011754## This is an IO image
+}}
+
+== See Also ==
+* [[Template:Big image list]]
+</noinclude>

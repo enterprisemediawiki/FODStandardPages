@@ -1,0 +1,6 @@
+<includeonly>|</includeonly><noinclude>{{Template description
+|Synopsis = Is this involved with the pipe-escape parser function?
+|Category = Templates with unknown purpose
+|Has good documentation = False
+}}
+</noinclude>

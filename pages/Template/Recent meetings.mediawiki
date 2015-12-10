@@ -1,0 +1,12 @@
+<includeonly>* <small>[[{{{1|}}}|{{{2|}}}]] - {{#arraymap:{{{3|}}}|,|VAR|&nbsp;[[VAR]]|,}}</small></includeonly><!--
+
+
+#
+#   Template Documentation
+#
+--><noinclude>
+This template is used by [[Template:Meeting]] to create a pretty list of recent meetings.
+
+== Example ==
+{{Meeting/Recent Meetings|FHRC|2013-02-13|James,Daren,Scott}}{{Meeting/Recent Meetings|FHRC|2013-02-13|James,Daren,Scott}}
+</noinclude>

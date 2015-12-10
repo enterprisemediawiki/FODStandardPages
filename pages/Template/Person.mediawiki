@@ -1,0 +1,136 @@
+<includeonly>
+{| class="smw-style-infobox-table"
+! class="smw-style-infobox-table-header" colspan="2" | {{PAGENAME}}
+
+{{#if: {{{Username|}}} | {{User Links|{{{Username|}}} }}{{#set:Username={{{Username|}}}|User page=User:{{{Username|}}} }}  | No NDC Username Provided![[Category:Personnel Pages Without NDC Username]] }}
+|-
+| style="text-align: center;" colspan="2" | 
+{{Infobox image 
+    | Image = {{{Photo|}}}
+    | Set property = Has photo 
+}} {{#if: {{{Photo|}}} | {{#set: Has photo={{{Photo|}}} }} | }}
+|-
+! Organization:
+| {{#if: {{{Organization|}}} | [[Organization::{{{Organization|}}}]] | }}
+|-
+! Employment:
+| {{#if: {{{Employment|}}} | [[Employment::{{{Employment|}}}]] | }}
+|-
+! style="text-align: center; background-color:#96c4ff;" colspan="2" | EVA MOD Certifications
+|-
+|{{#arraymap:{{{Certification|}}}|,|x|[[Certification::x]]|\n\n}}
+|}<!-- 
+
+End of infobox table
+
+-->
+{{{Intro text|}}}
+[[Category:Person]]{{#set:Page has default form=Person}}
+<h2> Missions </h2>
+{{PAGENAME}} was involved with the following missions:
+{{#ask: [[Person involved with subject::+]] [[Has full name::{{PAGENAME}}]]
+|mainlabel=-
+| sort = Has date
+| order = ascending
+|?From page = Mission
+|?Has role = Role
+|?Has date = Date
+}}
+{{#ifeq: {{{Employment|}}} {{{Organization|}}} | Current Employee MOD EVA | 
+<h2> Subject Matter Expert </h2>
+{{PAGENAME}} is subject matter expert of the following:
+{{#ask: [[SME::{{PAGENAME}}]]
+ | order = ascending 
+ | format = ul
+ | default = Not a subject matter expert
+}}
+<h2> Cadre Membership </h2>
+{{PAGENAME}} is a member of the following cadres:
+{{#ask: [[Cadre_Member::{{PAGENAME}}]]
+ | order = ascending 
+ | format = ul
+ | default = No cadre membership
+}}
+<h2> Group Responsibilities </h2>
+{{PAGENAME}} is responsible for the following:
+{{#arraymaptemplate:{{{Group Responsibilities|}}}|Group Responsibilities|,|\n}}
+
+<h2> Awards </h2>
+{{PAGENAME}} has received the following awards:
+{{#ask: [[Category:Award]] [[Award Recipient::{{PAGENAME}}]]
+ |?
+ |? Award Title
+ |? Award Date
+ |? Award Type
+ | sort=Award Date
+ | order=desc
+ | mainlabel=-
+ | link=none
+ | format=ul
+ | template=User Awards
+ | default = No awards
+}}
+
+
+}}
+
+{{{Console manning|}}}
+{{#ifeq: {{{Employment|}}} {{{Organization|}}} | Current Employee FA | 
+<h2> Subsystem Manager </h2>
+{{PAGENAME}} is subsystem (or hardware) manager of the following:
+{{#ask: [[Subsystem_Manager::{{PAGENAME}}]]
+ | order = ascending 
+ | format = ul
+ | default = Not a subsystem manager
+}}
+}}
+
+{{#ask: [[Category:NSOC CR]] [[NSOC CR FY::2016]] [[NSOC CR SME::{{PAGENAME}}]]
+ | mainlabel=CR Name
+ | ?NSOC CR FY
+ | ?NSOC CR Number
+ | ?NSOC CR SME 
+ | ?NSOC CR Request
+ | ?NSOC CR Priority
+ | ?NSOC CR Due Date
+ | ?NSOC CR Status
+ | format=template
+ | template=NSOC CR Row
+ | intro=<h2>NSOC CRs</h2>{{PAGENAME}} is responsible for the following [[NBL CRs]]:
+<table class="wikitable sortable"><tr>
+<th>CR Name</th>
+<th>FY</th>
+<th>CR #</th>
+<th>SME</th>
+<th>Requestor</th>
+<th>Priority</th>
+<th>Due Date</th>
+<th>Status</th>
+</tr>
+ | outro=</table>
+ | sort=NSOC CR Priority
+ | order=DESC
+ | limit=50
+}}
+</includeonly><noinclude>
+This is the "Person" template.
+It should be called in the following format:
+<pre>
+{{Person
+|Name=
+|Organization=
+|Photo=
+|Intro text=
+|SME=
+|Cadre=
+|Group Responsibilities= 
+|CERTs=
+|Employment=
+}}
+</pre>
+Additionally, the following attributes are passed by templates from [[Form:Person]]:
+* Crew (by [[Template:Crew involved with subject]])
+* Person (by [[Template:Person involved with subject]])
+
+Edit the page to see the template text.
+</noinclude>

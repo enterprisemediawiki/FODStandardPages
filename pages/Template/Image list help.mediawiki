@@ -1,0 +1,24 @@
+<noinclude>
+This template is for inserting into forms to help explain how to use image list fields. The content is below:
+
+</noinclude>{{Collapsible
+  | Content = 
+''For full tutorial on adding images to this field, see '''[[Help:Image Gallery Tutorial]]'''''
+
+'''Example:'''
+<pre>
+jsc2010e098690
+jsc2002e36651##               Include a caption like this if you want, using two hash symbols
+File:My local file name.jpg## Use either IO IDs or local images
+File:My image.jpg##           You can add lots of spaces before captions to keep the code neat
+</pre>
+
+Enter either local file names (images on the wiki) or [[Imagery Online]] IDs into the image list field, each on its own line.
+* Enter local images in the form: "File:My local file name.jpg"
+* Enter Imagery online IDs in the form: "jsc2002e36651"
+* Add captions by following the image name/ID with two hashes (##) and the caption
+** Don't make captions too long or it will look bad
+  | Collapse text = Hide help
+  | Expand text = Show help
+  | Start hidden = true
+}}

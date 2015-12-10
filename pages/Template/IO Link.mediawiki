@@ -1,0 +1,26 @@
+<noinclude>
+This template is the universal source for linking to images on IO. This way, if the link changes, we can change it in one place since there are several templates that call for IO imagery.
+
+== Usage ==
+=== Input ===
+# <pre>{{IO Link | thum | IO image ID }}</pre>
+# <pre>{{IO Link | lores | IO image ID }}</pre>
+# <pre>{{IO Link | hires | IO image ID }}</pre>
+
+=== Output ===
+# <pre>http://io.jsc.nasa.gov/photos/10032/thum/IO image ID.jpg</pre>
+# <pre>http://io.jsc.nasa.gov/photos/10032/lores/IO image ID.jpg</pre>
+# <pre>http://io.jsc.nasa.gov/photos/10032/hires/IO image ID.jpg</pre>
+
+== Examples ==
+=== Input ===
+# <pre>{{IO Link | thum | jsc2013e011754 }}</pre>
+# <pre>{{IO Link | lores | jsc2013e011754 }}</pre>
+# <pre>{{IO Link | hires | jsc2013e011754 }}</pre>
+
+=== Output ===
+# <pre>http://io.jsc.nasa.gov/photos/10032/thum/jsc2013e011754.jpg</pre>
+# <pre>http://io.jsc.nasa.gov/photos/10032/lores/jsc2013e011754.jpg</pre>
+# <pre>http://io.jsc.nasa.gov/photos/10032/hires/jsc2013e011754.jpg</pre>
+
+</noinclude><includeonly>http://io.jsc.nasa.gov/photos/10032/{{Trim| {{{1|}}} }}/{{Trim| {{{2|}}} }}.jpg</includeonly>

@@ -1,0 +1,11 @@
+<noinclude>
+This is to be called in an #ask query from [[Template:User page]]. The inputs are as follows:
+
+<pre>
+{{{1}}} = Person page name (e.g. "James Montalvo")
+{{{2}}} = Has photo
+{{{3}}} = Organization
+{{{4}}} = Employment
+</pre>
+</noinclude><includeonly><tr><th class="person-infobox-name-header" colspan="2"><big>[[{{{1}}}]]</big></th></tr>
+<tr><td colspan="2">[[{{{1|}}}|{{{1|}}}'s Info Page]]</td></tr></includeonly>

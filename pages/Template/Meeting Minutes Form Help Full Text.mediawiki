@@ -1,0 +1,14 @@
+{{Collapsible
+  | Content = 
+* '''This field is for the body of the meeting minutes'''
+** Anything you ordinarily put into meeting minutes, put here
+** This information will not get displayed on any other pages.
+* '''You may use links in this field'''
+* '''This field is NOT required'''
+** If the meeting topic information will fit within the synopsis field above, don't bother using this field
+  | Collapse text = hide help
+  | Expand text = help
+  | Start hidden = true
+  | Before trigger = '''Full Text:''' (
+  | After trigger = )
+}}

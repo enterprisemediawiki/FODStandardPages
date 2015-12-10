@@ -1,0 +1,26 @@
+<noinclude>
+Call this as follows on a user page (e.g. "User:Ejmontal"):
+<pre>
+{{User page}}
+</pre>
+</noinclude><includeonly>
+<table class="person-infobox-table">{{#ask: [[User page::{{FULLPAGENAME}}]] 
+|? Has photo
+|? Organization
+|? Employment
+|format=template
+|template=User page/Data from person page
+|link=none
+|default=<tr><td colspan="2">No personnel page for {{PAGENAME}}</td></tr>
+}}
+<tr><td colspan="2">[[Special:Contributions/{{PAGENAME}}|Contributions to {{SITENAME}}]]</td></tr>
+<tr><th class="person-infobox-name-header" colspan="2">List of Sub-Pages</th></tr>
+<tr><td colspan="2">{{#subpages: }}</td></tr>
+<tr><td colspan="2"><inputbox>
+type=create
+break=no
+prefix={{FULLPAGENAME}}/
+buttonlabel=Create Sub-page
+</inputbox></td></tr>
+</table>
+__NOTOC__</includeonly>

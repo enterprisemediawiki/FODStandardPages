@@ -1,0 +1,30 @@
+<noinclude>
+This template is to be used with calls to the [http://semantic-mediawiki.org/wiki/Help:Inline_queries #ask parser function], when querying the [http://www.mediawiki.org/wiki/Extension:Semantic_Internal_Objects Semantic Internal Object (SIO)] [[Property:Person involved with subject]] (which is created by [[Template:Person involved with subject]]). It can also can be used with [[Property:Crew involved with subject]] and [[Template:Crew involved with subject]].
+
+The #ask function should pass data in this form:
+<pre>
+{{#ask:[[Crew involved with subject::+]][[From page::{{{1|}}}]]
+|mainlabel=-
+|? Has role
+|? Has full name
+|intro = <ul>
+|outro = </ul>
+|format = template
+|template = Person with role list
+}}
+</pre>
+
+'''[[Property:From page]]:''' Used by the [[Property:Crew involved with subject]] (or [[Property:Person involved with subject]]) SIO to point back to the page the SIO is on. So if the ''Crew involved with subject'' SIO was created on the page ''STS-132'' to indicate that Tony Antonelli was Pilot, the ''From page'' property would point back to the ''STS-132'' page.
+
+'''[[Property:Has role]]:''' Indicates what role the person played for the subject. For [[Property:Crew involved with subject]] this could be ''Pilot'', ''EV1'', ''Mission Specialist'', etc. For [[Property:Person involved with subject]] this typically would be something like ''EVA Task'', ''EVA Lead'', ''Flight Director'', etc. It could also be used for things like ''EV&CS'', ''EVA Safety'', ''SME'', etc.
+
+'''[[Property:Has full name]]:''' The persons full name. This should correspond to the page describing that person, such as [[James Montalvo]]. If the person does not yet have a page try to pick a name that would be good for when their page is created.
+
+Within the template, these properties are mapped to the following template-parameters:
+<pre>
+mainlabel=- removes this item: {{{1|}}} = the name of the page the SIO came from, plus an number appended to the end (same as From page, but with unnecessary extra info)
+{{{1|}}} = Has role
+{{{2|}}} = Has full name
+</pre>
+
+</noinclude><includeonly><li>'''[[{{{1|}}}]]:''' [[{{{2|}}}]]</li></includeonly>

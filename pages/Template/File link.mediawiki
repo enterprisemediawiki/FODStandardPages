@@ -1,22 +1,22 @@
-<noinclude>'''Template:File link''' is an alternate method of linking to files in this wiki. It allows all file linking, both to local wiki files and external files, to be performed with one method. See '''[[Help:Linking to files]]''' for a tutorial.
+<noinclude>'''Template:File link''' is the recommended method of linking to files in the EVA Wiki. It allows all file linking, both to local wiki files and external files, to be performed with one method. This template replaces [[Template:Media link]], and adds external file capability. See '''[[Help:Linking to files]]''' for a tutorial.
 
 == Local Files ==
 For local files use the format below. Note that the "alt" parameter is optional.
 <pre>
-{{File link | file=File:International Space Station.pdf | alt=ISS Presentation }} (note, this file has to exist for it to display properly)
+{{File link | file=File:ISS Airlock Egress.ppt | alt=Airlock Egress }}
 </pre>
 
-The above wikitext displays as {{File link | file=File:International Space Station.pdf | alt=ISS Presentation }}. Note the "file info" link. There has been confusion with some wiki users who click on file links which bring them to another wiki page instead of directly to the file. Using this method, the major link will bring them directly to the file, whereas the "file info" link will bring them to the page where they can see the file upload history and upload new versions of the file.
+The above wikitext displays as {{File link | file=File:ISS Airlock Egress.ppt | alt=Airlock Egress }}. Note the "file info" link. There has been confusion with some wiki users who click on file links which bring them to another wiki page instead of directly to the file. Using this method, the major link will bring them directly to the file, whereas the "file info" link will bring them to the page where they can see the file upload history and upload new versions of the file.
 
 If the local file does not exist, the output will look like {{File link | file=File:My Fictitious File.doc | alt=Alt name won't show }} 
 
 == External Files ==
 For external files use the format below. Make sure to include <nowiki>http://</nowiki> or <nowiki>https://</nowiki> at the beginning of the URL. Again the "alt" parameter is optional, but it will look ugly without it in this case.
 <pre>
-{{File link | file=http://example.com/somefile.pdf | alt=My File }}
+{{File link | file=http://topssnet.ndc.nasa.gov/topssnet2/predive/predive.php?event_id=3795&v=row | alt=My Predive }}
 </pre>
 
-The above wikitext displays as {{File link | file=http://example.com/somefile.pdf | alt=My File }}. Note that there is no "file info" link, since the EVA Wiki has no such info for external files.
+The above wikitext displays as {{File link | file=http://topssnet.ndc.nasa.gov/topssnet2/predive/predive.php?event_id=3795&v=row | alt=My Predive }}. Note that there is no "file info" link, since the EVA Wiki has no such info for external files.
 
 </noinclude><includeonly><!-- 
 

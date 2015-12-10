@@ -1,0 +1,19 @@
+<noinclude>
+include the parameter "no wrapper" to remove the box around the sub page list, as used in [[Template:User page]]
+
+<pre>
+{{List of subpages | no wrapper = true }}
+</pre>
+</noinclude><includeonly>{{#ifeq: {{{no wrapper|}}} | true | | <div style="border:solid #FFFF40 2px;background-color:#FFFFBF;padding:5px;margin:5px;"> }}
+<h2 style="padding-top:0px;margin-top:10px;">{{FULLPAGENAME}} Sub-Pages</h2>
+{{Special:PrefixIndex/{{FULLPAGENAME}}/}}
+
+
+<inputbox>
+type=create
+break=no
+prefix={{FULLPAGENAME}}/
+buttonlabel=Create Sub-page
+</inputbox>
+{{#ifeq: {{{no wrapper|}}} | true | | </div> }}
+</includeonly>

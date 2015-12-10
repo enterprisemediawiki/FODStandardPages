@@ -1,0 +1,7 @@
+<table class="infobox lesson-plan-infobox">
+<caption>
+  <div style="background-color:#ccccff;padding:3px;">[[{{#if: {{{1|}}} | {{{1|}}} | {{FULLPAGENAME}} }}]]</div>
+</caption>
+<tr><th style="text-align:center;">List of Sub-pages</th></tr>
+<tr><td>{{#subpagelist: {{#if: {{{1|}}} | {{{1|}}} | {{FULLPAGENAME}} }} }}</td></tr>
+</table>

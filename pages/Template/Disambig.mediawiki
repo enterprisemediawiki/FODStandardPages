@@ -1,0 +1,19 @@
+<noinclude>
+{{Template description
+|Synopsis = This template marks a page a disambiguation page, with an icon and description, and gives it the category Disambiguation pages.
+|Category = Special Templates, Banner Templates
+|Has good documentation = False
+}}
+
+This template adds pages to [[:Category:Disambiguation pages]].
+</noinclude><!--
+
+
+  Template Definition
+
+--><includeonly>{{Banner
+|Content=''This is a [[:Category:Disambiguation pages|disambiguation page]], which lists pages which may be the intended target. If a [[Special:Whatlinkshere/{{PAGENAME}}|page link]] referred you here, please consider editing it to point directly to the intended page.''
+|Categories=Disambiguation pages
+|icon= [[Image:Disambig gray.png|30px|link=|disambiguation]]
+|border-color= gray
+}}</includeonly>

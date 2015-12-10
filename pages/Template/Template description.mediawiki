@@ -1,0 +1,45 @@
+<includeonly>{{Infobox
+|title   = {{FULLPAGENAME}}
+|image1  = {{#if: {{{Image|}}} | [[{{{Image|}}}]] | }}
+|label1  = Template type
+|data1   = {{{Category|}}}
+|label2  = Has good documentation
+|data2   = {{{Has good documentation|}}}
+}}{{{Synopsis|}}}<!--
+
+
+-->{{#if: {{{Synopsis|}}} | {{#set:Synopsis={{{Synopsis}}} }} | }}<!--
+
+
+-->{{#if: {{{Category|}}} | {{#arraymap:{{{Category|}}}|,|VAR|[[Category:VAR]]{{#set:Template type=VAR }} }} | <!-- else do nothing --> }}<!--
+
+
+-->{{#ifeq: {{{Has good documentation|}}} | False | [[Category:Template requiring documentation]] | }}
+</includeonly><noinclude>
+{{Template description
+|Synopsis = This template is for use in the "noinclude" section of other templates, as a standard way to display template information and make it 
+|Category = Template helpers
+|Has good documentation = False
+}}
+
+'''''Note: Eventually this template should create a list of other templates of the same type on each template page.'''''
+
+== Using this template ==
+
+=== Example ===
+<pre>
+{{Template description
+|Synopsis = <this will get included on pages like [[Help:Templates]] 
+|Category = <will act to give some organization to templates>
+|Has good documentation = <flag that determines if a template needs docs>
+}}
+</pre>
+
+=== Blank Template (mostly) ===
+<pre>
+{{Template description
+|Synopsis =  
+|Category = 
+|Has good documentation = False
+}}
+</pre></noinclude>

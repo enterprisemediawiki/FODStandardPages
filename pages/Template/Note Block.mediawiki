@@ -1,0 +1,28 @@
+<noinclude>{{Template description
+|Synopsis =  Creates SODF note blocks in pages
+|Category = SODF Templates, Block Templates
+|Has good documentation = True
+}}
+
+This is the "Note Block" template.
+It should be called in the following format:
+<pre>
+{{Note Block
+|Note=
+}}
+</pre>
+
+Or like this:
+<pre>
+{{Note Block | This is the text of note. }}
+</pre>
+
+This produces output like:
+
+{{Note Block | This is the text of the note. }}
+
+</noinclude><includeonly>{| class="ncw-block note-block"
+! NOTE
+|-
+| {{Trim | {{{Note|}}} }}{{Trim | {{{1|}}} }}
+|}</includeonly>

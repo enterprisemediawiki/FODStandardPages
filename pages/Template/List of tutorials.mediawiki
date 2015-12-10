@@ -1,0 +1,15 @@
+{{#masonry-block: title = Tutorials
+ | width = 1
+ | color = orange
+ | body  = 
+* [[Help:Tutorial Lesson 1          | Tutorial Lesson 1]]
+* [[Help:Tutorial Lesson 2          | Tutorial Lesson 2]]
+* [[Help:Tutorial Lesson 3          | Tutorial Lesson 3]]
+* Linking to: [[Help:Image Gallery Tutorial | Images]], [[Help:Linking to files | Files]], [[Help:Adding a video link | Videos]]
+* [[Screencast]]s
+* [[Help:Creating Redirects         | Creating Redirects]]
+* [[Help:Group Meeting Mini-Lessons | Group Meeting Mini-Lessons]]
+* [[Help:Microsoft Word add-in      | Microsoft Word Plugin]]
+* [[Help:Using discussion pages     | Using discussion pages]]
+* [[Help:Accessing from your phone  | Accessing from your phone]]
+}}

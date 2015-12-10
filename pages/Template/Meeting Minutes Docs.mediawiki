@@ -1,0 +1,95 @@
+== Fields ==
+; Meeting_Title : Title of the meeting. Corresponds to [[Property:Meeting Title]]. Use the same nomenclature as past meeting minutes (i.e. use "Tools Panel" not "Tool Panel")
+; Date : Date of meeting. Corresponds to [[Property:Date]]. Date type doesn't matter (you can use "April 24, 2012" or "4/12/2012" or "2012-04-24"), but the preferred form is "24 April 2012"
+; Note_Takers : List people. No properties. Optionally list them as links to their pages.
+; Topic1, ... , Topic40 : List tools, ORUs, EVAs, missions, or other topics. Corresponds to [[Property:Applies to]]. Will create a link to each topic's page.
+
+== Example ==
+Below is an example showing how to use the template.
+
+<pre style="width:800px;">
+{{Meeting Minutes
+  | Meeting_Title = Tools Panel
+  | Date          = 24 April 2012
+  | Note_Takers   = James Montalvo
+  | Topic1        = PGT
+  | Topic2        = RET
+  | Topic3        = US EVA 18
+  | Topic4        = HTV-3
+
+  | Document Title 1  = Tools Panel Agenda
+  | Document Link 1   = https://evaweb.jsc.nasa.gov/Documents.aspx/Get/9791
+}}
+</pre>
+
+== Blank Template ==
+Below is a blank template to make data-entry easier.
+
+<pre style="width:400px;">
+{{Meeting Minutes
+  | Meeting_Title =
+  | Date          = 
+  | Note_Takers   = 
+  | Topic1        = 
+  | Topic2        = 
+  | Topic3        = 
+  | Topic4        = 
+  | Topic5        = 
+  | Topic6        = 
+  | Topic7        = 
+  | Topic8        = 
+  | Topic9        = 
+  | Topic10       = 
+  | Topic11       = 
+  | Topic12       = 
+  | Topic13       = 
+  | Topic14       = 
+  | Topic15       = 
+  | Topic16       = 
+  | Topic17       = 
+  | Topic18       = 
+  | Topic19       = 
+  | Topic20       = 
+  | Topic21       = 
+  | Topic22       = 
+  | Topic23       = 
+  | Topic24       = 
+  | Topic25       = 
+  | Topic26       = 
+  | Topic27       = 
+  | Topic28       = 
+  | Topic29       = 
+  | Topic30       = 
+  | Topic31       = 
+  | Topic32       = 
+  | Topic33       = 
+  | Topic34       = 
+  | Topic35       = 
+  | Topic36       = 
+  | Topic37       = 
+  | Topic38       = 
+  | Topic39       = 
+  | Topic40       = 
+
+  | Document Title 1  =
+  | Document Link 1   =
+  | Document Title 2  =
+  | Document Link 2   =
+  | Document Title 3  =
+  | Document Link 3   =
+  | Document Title 4  =
+  | Document Link 4   =
+  | Document Title 5  =
+  | Document Link 5   =
+  | Document Title 6  =
+  | Document Link 6   =
+  | Document Title 7  =
+  | Document Link 7   =
+  | Document Title 8  =
+  | Document Link 8   =
+  | Document Title 9  =
+  | Document Link 9   =
+  | Document Title 10 =
+  | Document Link 10  =
+}}
+</pre>

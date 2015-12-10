@@ -1,0 +1,31 @@
+<includeonly>
+[[File:{{PAGENAME}}.jpg|thumb]]
+
+== Subject Matter Expert ==
+{{PAGENAME}} is subject matter expert of the following:
+{{#ask: [[SME::{{PAGENAME}}]]
+ | order = ascending 
+ | format = ul
+ | default = Not a subject matter expert
+}}
+
+== Cadre Membership ==
+{{PAGENAME}} is a member of the following cadres:
+{{#ask: [[Cadre_Member::{{PAGENAME}}]]
+ | order = ascending 
+ | format = ul
+ | default = No cadre membership
+}}
+
+== Missions ==
+{{PAGENAME}} was involved with the following missions:
+{{#ask: [[Person involved with subject::+]] [[Has full name::{{PAGENAME}}]]
+|mainlabel=-
+| sort = Has date
+| order = ascending
+|?From page = Mission
+|?Has role = Role
+|?Has date = Date
+}}
+[[Category:Person]]
+</includeonly>

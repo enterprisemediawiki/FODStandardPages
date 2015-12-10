@@ -1,0 +1,14 @@
+{{#masonry-block: title = Recent Changes
+ | width = 1
+ | color = purple
+ | body  = 
+{{#ask: [[:+]]
+ | format = ul
+ | sort   = Modification date
+ | order  = desc
+ | limit  = 5
+ | searchlabel=
+}}
+* '''[[Special:RecentChanges|See all recent changes]]'''<br />
+* '''[[Special:NewPages|See all new pages]]'''<br />
+}}

@@ -1,0 +1,14 @@
+<noinclude>
+This template removes whitespace from the beginning of strings. So if you have a value like " This is some text ", and pass it through this template, it will return "This is some text".
+
+This is helpful sometimes in other templates, where the user may leave whitespace on the front of a template parameter, which could make it display poorly.
+
+== Usage ==
+<pre>
+{{Trim| {{{parameter|}}} }}
+</pre>
+
+== How it works ==
+All this template does is pass the parameter through the #if parser function. The #if parser function trims whitespace off of values before testing them, so we can use this side-effect to create a trim function.
+
+</noinclude><includeonly>{{#if:{{{1|}}}|{{{1|}}}}}</includeonly>
