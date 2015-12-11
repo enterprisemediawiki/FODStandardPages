@@ -1,1 +1,0 @@
-This property is of type [[Has type::Date]]. It is potentially used in many places.

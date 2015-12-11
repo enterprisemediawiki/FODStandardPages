@@ -1,1 +1,0 @@
-This property has type [[Has type::Text]], and is intended for any page to include basic overview info about the page.

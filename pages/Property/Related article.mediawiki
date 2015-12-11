@@ -1,2 +1,0 @@
-This is a property of type [[Has type::Page]].
-[[Category:Property Used for Summary Timeline Extension]]

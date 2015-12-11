@@ -1,1 +1,0 @@
-* {{File link | file={{{File or URL|}}} | alt={{{Alternate name|}}} }}<br />

@@ -1,2 +1,0 @@
-<h3>{{{1|}}}</h3>
-{{#if: {{#show: {{{1|}}} | ?Synopsis}} | <p>''For more info see [[{{{1|}}}|topic page]].''</p>'''Synopsis:''' {{#show: {{{1|}}} | ?Synopsis}} | Topic not created. [{{fullurl:Special:FormEdit/Meeting_Topic/{{{1|}}}}} Add topic].}}
