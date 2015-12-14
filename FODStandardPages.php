@@ -33,7 +33,7 @@ $GLOBALS['wgMessagesDirs']['FODStandardPages'] = __DIR__ . '/i18n';
 
 PageImporter::registerPageList(
 	"FODStandardPages",
-	__DIR__ . "/pages.json",
+	__DIR__ . "/pages.php",
 	__DIR__ . "/pages",
 	"Updated with content from Extension:FODStandardPages version " . FOD_STANDARD_SETTINGS_VERSION
 );
